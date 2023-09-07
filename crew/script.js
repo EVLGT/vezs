@@ -55,18 +55,30 @@ function openFlightForm(destinationIATA) {
     <div class="modal">
       <h2>Generate Flight</h2>
       <form>
-        <label for="destinationIATA">Destination IATA Code:</label>
-        <input type="text" id="destinationIATA" value="${destinationIATA}" readonly>
-        <label for="departureTime">Departure Time:</label>
-        <input type="time" id="departureTime" required>
-        <label for="arrivalTime">Arrival Time:</label>
-        <input type="time" id="arrivalTime" required>
-        <label for="arrivalIATA">Arrival IATA Code:</label>
-        <input type="text" id="arrivalIATA" required>
-        <label for="flightDate">Flight Date:</label>
-        <input type="date" id="flightDate" required>
-        <label for="aircraft">Aircraft:</label>
-        <input type="text" id="aircraft" required>
+        <div class="form-group">
+          <label for="destinationIATA">Destination IATA Code:</label>
+          <input type="text" id="destinationIATA" value="${destinationIATA}" readonly>
+        </div>
+        <div class="form-group">
+          <label for="departureTime">Departure Time:</label>
+          <input type="time" id="departureTime" required>
+        </div>
+        <div class="form-group">
+          <label for="arrivalTime">Arrival Time:</label>
+          <input type="time" id="arrivalTime" required>
+        </div>
+        <div class="form-group">
+          <label for="arrivalIATA">Arrival IATA Code:</label>
+          <input type="text" id="arrivalIATA" required>
+        </div>
+        <div class="form-group">
+          <label for="flightDate">Flight Date:</label>
+          <input type="date" id="flightDate" required>
+        </div>
+        <div class="form-group">
+          <label for="aircraft">Aircraft:</label>
+          <input type="text" id="aircraft" required>
+        </div>
         <div class="button-container">
           <button type="button" class="generate-button" onclick="generateFlight()">Generate</button>
           <button type="button" class="close-button" onclick="closeFlightForm()">Close</button>
