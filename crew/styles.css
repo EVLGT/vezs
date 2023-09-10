@@ -162,3 +162,26 @@ tr:hover {
 .close-button:hover {
   background-color: #ccc;
 }
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #e45c02;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-container a {
+  text-decoration: none;
+}
