@@ -1437,6 +1437,30 @@ var jsonData = [
     "ICAO": "LSZH",
     "Airport": "Zurich Airport",
     "Refs": ["160"]
+  },
+  {
+    "City": "Hurghada",
+    "Country": "Egypt",
+    "IATA": "HRG",
+    "ICAO": "HEGN",
+    "Airport": "Hurghada International Airport",
+    "Refs": ["161"]
+  },
+  {
+    "City": "Marsa Alam",
+    "Country": "Egypt",
+    "IATA": "RMF",
+    "ICAO": "HEMA",
+    "Airport": "Marsa Alam International Airport",
+    "Refs": ["162"]
+  },
+  {
+    "City": "Cairo",
+    "Country": "Egypt",
+    "IATA": "CAI",
+    "ICAO": "HECA",
+    "Airport": "Cairo International Airport",
+    "Refs": ["163"]
   }
 ];
 
