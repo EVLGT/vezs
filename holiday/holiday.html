@@ -67,11 +67,25 @@
             <article class="angebot">
                 <img src="pictures/albatroscitadelhurghada.jpg" alt="Albatros Citadel - Hurghada Sahl Hasheesh (Ägypten)">
                 <div class="angebot-info">
-                    <h2>Albatros Citadel - Hurghada Sahl Hasheesh</h2>
+                    <h2>Albatros Citadel - Hurghada Sahl Hasheesh (Ägypten)</h2>
                     <p>Erleben Sie unvergessliche Tage in Hurghada.</p>
                     <p>Anflug: Hurghada International Airport (HRG) Terminal 1</p>
-                    <p class="preis">Ab €1200 pro Person</p>
+                    <p>Verpflegung: All Inclusive (5*)</p>
+                    <p>Hotel Transfer inklusive + Train2Airport in Basel</p>
+                    <p class="preis">Ab €580 pro Person</p>
                     <a href="#" class="angebot-button" data-offer="Hurghada" id="buchungs-button-hurghada">Jetzt buchen</a>
+                </div>
+            </article>
+            <article class="angebot">
+                <img src="pictures/oasisrmf.png" alt="PickAlbatros Oasis Port Ghalib - Marsa Alam (Ägypten)">
+                <div class="angebot-info"> 
+                    <h2>PickAlbatros Oasis Port Ghalib - Marsa Alam (Ägypten)</h2>
+                    <p>Tanken Sie Sonnenschein im orientalischen Marsa Alam.</p>
+                    <p>Anflug: Marsa Alam International Airport (RMF) Terminal 1</p>
+                    <p>Verpflegung: All Inclusive (5*)</p>
+                    <p>Hotel Transfer inklusive + Train2Airport in Basel</p>
+                    <p class="preis">Ab €700 pro Person</p>
+                    <a href="#" class="angebot-button" data-offer="MarsaAlam" id="buchungs-button-marsaalam">Jetzt buchen</a>
                 </div>
             </article>
             <article class="angebot">
@@ -80,6 +94,8 @@
                     <h2>Keramoti - Kavala (Griechenland)</h2>
                     <p>Entspannen Sie in der malerischen Umgebung von Keramoti.</p>
                     <p>Anflug: Kavala Megas Alexandros Airport (KVA) Terminal 1</p>
+                    <p>Verpflegung: Nur Frühstück (3*)</p>
+                    <p>Train2Airport in Basel</p>
                     <p class="preis">Ab €300 pro Person</p>
                     <a href="#" class="angebot-button" data-offer="Keramoti" id="buchungs-button-keramoti">Jetzt buchen</a>
                 </div>
@@ -107,21 +123,30 @@
 
             var buchungsButtonHurghada = document.getElementById("buchungs-button-hurghada");
             var buchungsButtonKeramoti = document.getElementById("buchungs-button-keramoti");
+            var buchungsButtonMarsaAlam = document.getElementById("buchungs-button-marsaalam")
 
             buchungsButtonHurghada.addEventListener("click", function () {
                 form.style.display = "block";
                 subjectInput.value = "Booking Inquiry for Hurghada";
-                bodyInput.value = "Angebot: Hurghada";
+                bodyInput.value = "Angebot: Albatros Citadel - Hurghada Sahl Hasheesh (Ägypten)";
                 emailSubject.value = "Booking Inquiry for Hurghada";
-                emailBody.value = "Angebot: Hurghada";
+                emailBody.value = "Angebot: Albatros Citadel - Hurghada Sahl Hasheesh (Ägypten)";
+            });
+
+            buchungsButtonMarsaAlam.addEventListener("click", function () {
+                form.style.display = "block";
+                subjectInput.value = "Booking Inquiry for Marsa Alam";
+                bodyInput.value = "Angebot: PickAlbatros Oasis Port Ghalib - Marsa Alam (Ägypten)";
+                emailSubject.value = "Booking Inquiry for Marsa Alam";
+                emailBody.value = "Angebot: PickAlbatros Oasis Port Ghalib - Marsa Alam (Ägypten)";
             });
 
             buchungsButtonKeramoti.addEventListener("click", function () {
                 form.style.display = "block";
                 subjectInput.value = "Booking Inquiry for Keramoti";
-                bodyInput.value = "Angebot: Keramoti";
+                bodyInput.value = "Angebot: Keramoti - Kavala (Griechenland)";
                 emailSubject.value = "Booking Inquiry for Keramoti";
-                emailBody.value = "Angebot: Keramoti";
+                emailBody.value = "Angebot: Keramoti - Kavala (Griechenland)";
             });
         });
 
