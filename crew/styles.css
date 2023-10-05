@@ -17,6 +17,8 @@ body {
   display: flex;
   align-items: center;
   margin: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .header a {
@@ -26,26 +28,27 @@ body {
 }
 
 .header img {
-  max-width: 500px;
+  max-width: 100%;
   height: auto;
-  margin-right: 10px;
+  margin-right: 0;
 }
 
 .filter-section {
-  margin: 20px;
+  margin: 20px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 .filter-section label,
 .filter-section input {
-  margin: 0 10px;
+  margin: 10px 0;
 }
 
 table {
   border-collapse: collapse;
-  width: 80%;
-  max-width: 800px;
+  width: 100%;
+  max-width: none;
   margin: 0 auto 20px;
   background-color: #ffffff;
   border-radius: 8px;
@@ -90,8 +93,8 @@ tr:hover {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   z-index: 1001;
-  width: 400px;
-  max-width: 95%;
+  width: 95%;
+  max-width: 100%;
 }
 
 .modal h2 {
